@@ -19,20 +19,23 @@ Download the latest release from the [releases page](https://github.com/chubbard
 
 ## Parameters
 
-| Parameter | Description                                                                 | Values                       | Default Assign |
-|-----------|-----------------------------------------------------------------------------|------------------------------|----------------|
-| Attack    | Choose the attack time                                                      | 0.001 - 1.0                  | Pad X          |
-| Release   | Choose the release time                                                     | 0.001 - 1.0                  | Pad Y          |
-| Reduce    | When the gate closes reduce the incoming signal by this many dB             | -114.0 - 0.0                 | Depth          |
-| Gate Type | Choose the rhythm division                                                  | 1/2, 1/4, 1/8, 1/16, CC, Pad |                |
-| CC GATE   | Assign CC GATE to Pad X/Y or Depth on the device and send that control's CC | CC 12/13/14                  |                |
+| Parameter | Description                                                                 | Values                                         | Default Assign |
+|-----------|-----------------------------------------------------------------------------|------------------------------------------------|----------------|
+| Attack    | Choose the attack time                                                      | 0.001 - 1.0                                    | Pad X          |
+| Release   | Choose the release time                                                     | 0.001 - 1.0                                    | Pad Y          |
+| Reduce    | When the gate closes reduce the incoming signal by this many dB             | -114.0 - 0.0                                   | Depth          |
+| Gate Type | Choose the rhythm division                                                  | 1/2, 1/4, 1/4_, 1/8, 1/8_, 1/16 1/16_, CC, Pad |                |
+| CC GATE   | Assign CC GATE to Pad X/Y or Depth on the device and send that control's CC | CC 12/13/14                                    |                |
 
 ### Gate Type
 
 - 1/2: Opens on every other beat
 - 1/4: Opens on every quarter note
+- 1/4_: Opens on every dotted quarter note
 - 1/8: Opens on every eighth note
+- 1/8_: Opens on every dotted eighth note
 - 1/16: Opens on every sixteenth note
+- 1/16_: Opens on every dotted sixteenth note
 - CC: Opens/Close based on CC message(s)
 - Pad: Opens on every pad press
 
